@@ -16,12 +16,12 @@ pipeline {
         }  stage('deploy') {
             steps {
                 echo 'Hello deploy'
-                pwd
+               sh 'pwd'
             }
         }  stage('push') {
             steps {
                 echo 'Hello push'
-                docker ps
+                sh 'docker ps'
             }
         }
     }
