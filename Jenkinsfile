@@ -8,17 +8,19 @@ pipeline {
                 sleep 10
             }
         }
-          stage('test') {
+         stage('test') {
             steps {
                 echo 'Hello test'
                 sleep 5
             }
-        }  stage('deploy') {
+        }
+         stage('deploy') {
             steps {
                 echo 'Hello deploy'
                sh 'pwd'
             }
-        }  stage('push') {
+        }
+         stage('push') {
             steps {
                 echo 'Hello push'
                 sh 'docker ps'
